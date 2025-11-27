@@ -1,0 +1,16 @@
+(node:48299) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48299) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+🚀 Server running on http://localhost:5003
+✅ MongoDB Atlas connected
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
+Using Ollama model: llama3:latest
