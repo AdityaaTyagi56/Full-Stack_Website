@@ -4,7 +4,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-v18+-green?style=for-the-badge&logo=node.js)
 ![Express](https://img.shields.io/badge/Express-v5-white?style=for-the-badge&logo=express)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb)
-![Ollama](https://img.shields.io/badge/AI-Ollama-orange?style=for-the-badge)
+![Gemini](https://img.shields.io/badge/AI-Gemini-0F9D58?style=for-the-badge&logo=google)
 
 > **"Not Me, But You"** - A digital embodiment of the NSS spirit, blending vintage aesthetics with modern web technologies and AI integration.
 
@@ -39,7 +39,7 @@ graph TD
 
     subgraph External Services
         DB[(🍃 MongoDB Atlas)]
-        AI[🤖 Ollama AI]
+        AI[🤖 Gemini AI]
         Weather[☁️ Open-Meteo API]
     end
 
@@ -71,7 +71,7 @@ graph TD
 - **Award Recognition**: Update the "Hall of Fame" section.
 
 ### 🤖 AI Integration
-- **Story Generator**: Generates full news stories from short photo captions using Ollama.
+- **Story Generator**: Generates full news stories from short photo captions using Gemini.
 - **Chatbot**: Context-aware AI assistant for site visitors.
 
 ---
@@ -79,98 +79,50 @@ graph TD
 ## 💻 Tech Stack
 
 | Component | Technology | Description |
-|-----------|------------|-------------|
-| **Frontend** | HTML5, CSS3, JavaScript (ES6+) | Vanilla JS, Glassmorphism UI, Responsive Design |
-| **Backend** | Node.js, Express.js | RESTful API, File Uploads (Multer) |
-| **Database** | MongoDB Atlas | Cloud NoSQL Database |
-| **AI Engine** | Ollama (Llama 3 / Mistral) | Local LLM for text generation |
-| **Config** | Dotenv | Environment variable management |
+|---|---|---|
+| Frontend | HTML, CSS, JS | Static site with interactive widgets |
+| Backend | Node.js, Express | REST API for content and auth |
+| Database | MongoDB Atlas | Stores articles, events, images |
+| AI | Gemini | Story generation and assistant |
+| Hosting | Any static host / Node server | Deployable to Netlify, Vercel, or custom VPS |
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- **Node.js** (v16 or higher)
-- **MongoDB Atlas** Connection String
-- **Ollama** installed and running locally (for AI features)
+1. Clone the repo:
 
-### 📥 Installation
+   git clone https://github.com/AdityaaTyagi56/Full-Stack_Website.git
+   cd Full-Stack_Website
 
-1.  **Clone the Repository**
-    ```bash
-    git clone https://github.com/yourusername/nss-chronicle.git
-    cd nss-chronicle
-    ```
+2. Install the server dependencies (if running backend):
 
-2.  **Install Backend Dependencies**
-    ```bash
-    cd backend
-    npm install
-    ```
+   cd server
+   npm install
+   npm start
 
-3.  **Configure Environment**
-    Create a `.env` file in the `backend` folder:
-    ```env
-    PORT=5003
-    MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/nss_db
-    OLLAMA_URI=http://127.0.0.1:11434
-    ```
+3. Serve the frontend from the `frontend` directory. For example:
 
-4.  **Configure Frontend**
-    Ensure `frontend/scripts/config.js` points to your backend:
-    ```javascript
-    const CONFIG = {
-        API_BASE_URL: 'http://localhost:5003'
-    };
-    ```
+   cd ../frontend
+   npx http-server -p 8080
 
-### ▶️ Running the Project
-
-**Option 1: Quick Start Script (macOS/Linux)**
-```bash
-./start.sh
-```
-
-**Option 2: Manual Start**
-1.  Start the Backend:
-    ```bash
-    cd backend
-    node server.js
-    ```
-2.  Open `frontend/index.html` in your browser (or use Live Server).
+4. Configure `scripts/config.js` to point to your API endpoint if running locally.
 
 ---
 
-## 📂 Project Structure
+## 🔒 Security & Privacy
 
-```text
-Website-Final/
-├── backend/                 # Server-side Code
-│   ├── uploads/             # Image storage
-│   ├── .env                 # Environment variables
-│   ├── server.js            # Express App Entry Point
-│   └── package.json         # Backend Dependencies
-├── frontend/                # Client-side Code
-│   ├── styles/              # CSS Files (main.css)
-│   ├── scripts/             # JS Files (main.js, config.js)
-│   ├── index.html           # Main Landing Page
-│   └── admin.html           # Admin Dashboard
-├── start.sh                 # Startup Script
-└── README.md                # Project Documentation
-```
+- Do not commit production credentials. Use environment variables for DB URI and API keys.
+- Ensure file uploads are validated and scanned before storage.
 
 ---
-
 
 ## 🤝 Contributing
 
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/AmazingFeature`).
-3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4.  Push to the branch (`git push origin feature/AmazingFeature`).
-5.  Open a Pull Request.
+Contributions are welcome! Please open an issue or submit a pull request.
 
 ---
 
-**© 2025 NSS IIIT-Naya Raipur.** Built with ❤️ and ☕.
+## 📄 License
+
+MIT License
