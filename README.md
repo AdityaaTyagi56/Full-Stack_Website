@@ -162,11 +162,6 @@ Website-Final/
 
 ---
 
-## 📸 Gallery & Screenshots
-
-*(Add screenshots of the Landing Page, Admin Panel, and AI Chat here)*
-
----
 
 ## 🤝 Contributing
 
